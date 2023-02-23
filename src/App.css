@@ -1,0 +1,66 @@
+video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+.container,
+#root {
+	padding: 50px 5px 5px 5px;
+	height: 50vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-family: Montserrat, Helvetica, sans-serif;
+	color: white;
+}
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+input {
+	text-align: center;
+	margin-right: 5px;
+	height: 30px;
+	border-radius: 5px;
+	font-size: large;
+	font-family: Montserrat, Helvetica, sans-serif;
+	box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+	border: 0;
+}
+button {
+	height: 20px;
+	width: 60px;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 7px;
+	box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	line-height: 1;
+	padding: 1rem 1.2rem;
+	transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+	border: 0;
+}
+
+.city,
+.country {
+	font-size: 1.5em;
+}
+.weather {
+	text-transform: lowercase;
+	font-size: 2em;
+	font-style: italic;
+}
+.temp {
+	font-size: 3em;
+}
+.weather::first-letter {
+	text-transform: uppercase;
+}
